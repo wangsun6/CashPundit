@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/id_t1"
+        android:layout_marginTop="@dimen/length_8"
+        style="@style/commonText"
+        android:text="@string/sales_collection"
+        android:padding="@dimen/length_8"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/id_exp_1"
+        app:ael_expanded="false"
+        app:ael_duration="500"
+        app:ael_interpolator="fastOutSlowIn"
+        app:ael_orientation="vertical"
+        android:background="#E57373"
+        style="@style/commonLayout">
+
+        <LinearLayout
+            style="@style/commonLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:text="Sales YTD"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Coll YTD"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Sales MTD"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Coll MTD"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/id_exp_1_1"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_1_2"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_1_3"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_1_4"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/id_t2"
+        android:layout_marginTop="@dimen/length_8"
+        style="@style/commonText"
+        android:text="Pending Follow-Ups:"
+        android:padding="@dimen/length_8"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/id_exp_2"
+        app:ael_expanded="false"
+        app:ael_duration="500"
+        app:ael_interpolator="fastOutSlowIn"
+        app:ael_orientation="vertical"
+        android:background="#E57373"
+        style="@style/commonLayout">
+
+        <LinearLayout
+            style="@style/commonLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:text="Customers"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Total Invoices"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="% of Net Rec"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Invoices value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/id_exp_2_1"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_2_2"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_2_3"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_2_4"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/id_t3"
+        android:layout_marginTop="@dimen/length_8"
+        style="@style/commonText"
+        android:text="Invoices Overdue:"
+        android:padding="@dimen/length_8"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/id_exp_3"
+        app:ael_expanded="false"
+        app:ael_duration="500"
+        app:ael_interpolator="fastOutSlowIn"
+        app:ael_orientation="vertical"
+        android:background="#E57373"
+        style="@style/commonLayout">
+
+        <LinearLayout
+            style="@style/commonLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:text="Customers"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Total Invoices"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Invoices Value"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Yet to Follow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/id_exp_3_1"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_3_2"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_3_3"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_3_4"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/id_t4"
+        android:layout_marginTop="@dimen/length_8"
+        style="@style/commonText"
+        android:text="Invoices Almost Due:"
+        android:padding="@dimen/length_8"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/id_exp_4"
+        app:ael_expanded="false"
+        app:ael_duration="500"
+        app:ael_interpolator="fastOutSlowIn"
+        app:ael_orientation="vertical"
+        android:background="#E57373"
+        style="@style/commonLayout">
+
+        <LinearLayout
+            style="@style/commonLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:text="Customers"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Total Invoices"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="% of Net Rec"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Invoices Value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/id_exp_4_1"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_4_2"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_4_3"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_4_4"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <TextView
+        android:id="@+id/id_t5"
+        android:layout_marginTop="@dimen/length_8"
+        style="@style/commonText"
+        android:text="Bills Overdue:"
+        android:padding="@dimen/length_8"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/id_exp_5"
+        app:ael_expanded="false"
+        app:ael_duration="500"
+        app:ael_interpolator="fastOutSlowIn"
+        app:ael_orientation="vertical"
+        android:background="#E57373"
+        style="@style/commonLayout">
+
+        <LinearLayout
+            style="@style/commonLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:text="Vendors"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Total Bills"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Bills Value"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Yet to Follow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/id_exp_5_1"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_5_2"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_5_3"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_5_4"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/id_t6"
+        android:layout_marginTop="@dimen/length_8"
+        style="@style/commonText"
+        android:text="Bill Almost Due:"
+        android:padding="@dimen/length_8"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/id_exp_6"
+        app:ael_expanded="false"
+        app:ael_duration="500"
+        app:ael_interpolator="fastOutSlowIn"
+        app:ael_orientation="vertical"
+        android:background="#E57373"
+        style="@style/commonLayout">
+
+        <LinearLayout
+            style="@style/commonLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:text="Vendors"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Total Bills"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="% of Net Pay"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Bills Value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/id_exp_6_1"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_6_2"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_6_3"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_6_4"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/id_t7"
+        android:layout_marginTop="@dimen/length_8"
+        style="@style/commonText"
+        android:text="PDCs Received:"
+        android:padding="@dimen/length_8"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/id_exp_7"
+        app:ael_expanded="false"
+        app:ael_duration="500"
+        app:ael_interpolator="fastOutSlowIn"
+        app:ael_orientation="vertical"
+        android:background="#E57373"
+        style="@style/commonLayout">
+
+        <LinearLayout
+            style="@style/commonLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:text="Customers"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="PDC/LC"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Upto 7 Days"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/id_exp_7_1"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_7_2"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_7_3"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_7_4"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    <TextView
+        android:id="@+id/id_t8"
+        android:layout_marginTop="@dimen/length_8"
+        style="@style/commonText"
+        android:text="PDCs Issued:"
+        android:padding="@dimen/length_8"/>
+
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/id_exp_8"
+        app:ael_expanded="false"
+        app:ael_duration="500"
+        app:ael_interpolator="fastOutSlowIn"
+        app:ael_orientation="vertical"
+        android:background="#E57373"
+        style="@style/commonLayout">
+
+        <LinearLayout
+            style="@style/commonLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:text="Vendors"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="PDC/LC"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Upto 7 Days"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/commonText_small"
+                    android:text="Value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/commonLayout"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/id_exp_8_1"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_8_2"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_8_3"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+                <TextView
+                    android:id="@+id/id_exp_8_4"
+                    style="@style/commonText_small"
+                    android:layout_weight="1"
+                    android:hint="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+</LinearLayout>
