@@ -1,8 +1,8 @@
 package com.wangsun.android.test1.activities
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.github.mikephil.charting.components.XAxis
@@ -10,9 +10,7 @@ import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.IAxisValueFormatter
-import com.jjoe64.graphview.LegendRenderer
-import com.jjoe64.graphview.series.DataPoint
-import com.jjoe64.graphview.series.LineGraphSeries
+import com.wangsun.android.test1.ApplicationMy
 import com.wangsun.android.test1.R
 import com.wangsun.android.test1.api.RetrofitClient
 import com.wangsun.android.test1.api.params.LstGraph
@@ -26,38 +24,20 @@ import java.text.ParseException
 import java.text.SimpleDateFormat
 
 
-@SuppressLint("CheckResult")
 class ActivityMain : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //drawGraph()
         initExpandLayout()
-        getServerData()
-    }
 
-    private fun drawGraph() {
-        val series = LineGraphSeries<DataPoint>(
-            arrayOf<DataPoint>(
-                DataPoint(0.0, 1.0),
-                DataPoint(1.0, 5.0),
-                DataPoint(2.0, 3.0)
-            )
-        )
-
-        id_graph.viewport.isXAxisBoundsManual = true
-        id_graph.viewport.setMinX(0.0)
-        id_graph.viewport.setMaxX(5.0)
-
-
-        id_graph.viewport.isScrollable = true
-        id_graph.addSeries(series)
-        id_graph.legendRenderer.isVisible = true
-        id_graph.legendRenderer.align = LegendRenderer.LegendAlign.TOP
-
-
+        if(ApplicationMy.hasNetwork()){
+            getServerData()
+        }
+        else{
+            Toast.makeText(this,"No network connection...",Toast.LENGTH_LONG).show()
+        }
 
     }
 
@@ -238,7 +218,7 @@ class ActivityMain : AppCompatActivity() {
         try {
             val date = format1.parse(d1)
 
-            //now get months and year
+            //now get months and year from date
             val format2 = SimpleDateFormat("MM/yyyy")
             return format2.format(date)
 

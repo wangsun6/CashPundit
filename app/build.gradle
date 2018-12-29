@@ -1,7 +1,5 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
@@ -31,11 +29,6 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
-
-    def view_model_version = "1.1.1"
-    def support_version = "28.0.0"
-    def glide_version = "4.3.1"
-
     /* rxjava */
     implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
@@ -47,21 +40,11 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:3.10.0"
     implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
 
-    //adding view model
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0-alpha01'
 
-    //adding recyclerview and cardview
+    //adding and cardview
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha01'
 
-    //adding glide
-    implementation "com.github.bumptech.glide:glide:$glide_version"
-    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
-
-    implementation 'com.jjoe64:graphview:4.2.2'
-
+    //others
     implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
-
-
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 }
